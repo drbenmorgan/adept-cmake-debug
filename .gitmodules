@@ -1,0 +1,3 @@
+[submodule "externals/g4hepem"]
+	path = externals/g4hepem
+	url = https://github.com/mnovak42/g4hepem.git
