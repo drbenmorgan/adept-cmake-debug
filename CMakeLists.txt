@@ -5,7 +5,10 @@ project(Adept
   DESCRIPTION "Accelerated demonstrator of electromagnetic Particle Transport"
   LANGUAGES C CXX)
 
+message(STATUS ">>> Top level call to find VecGeom")
 find_package(VecGeom REQUIRED)
+
+message(STATUS ">>> Top level call to find Geant4")
 find_package(Geant4 QUIET)
 
 if(NOT Geant4_FOUND)
@@ -13,5 +16,5 @@ if(NOT Geant4_FOUND)
 endif()
 
 # This is the G4HepEM part
-add_subdirectory(external)
+add_subdirectory(externals)
 
